@@ -29,7 +29,8 @@ import {Card,CardImg,CardText,CardBody,CardTitle  } from 'reactstrap';
    }
 
   function RenderComments({comments}){
-     const display = comments.map((mycom) => {
+
+     const displayComments = comments.map((mycom) => {
      return (
     <div>
        <li key={mycom.id}>{mycom.comment}
@@ -41,7 +42,9 @@ import {Card,CardImg,CardText,CardBody,CardTitle  } from 'reactstrap';
      return(
           <div>
              <h4>Comments</h4>
-             <ul className="list-unstyled">{display}</ul>
+             <ul className="list-unstyled">
+                { displayComments }
+             </ul>
           </div>
         );
      }
