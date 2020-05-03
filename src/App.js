@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
-import Main from './components/MainComponent';
-import './App.css';
+import React, { Component } from "react";
+import Main from "./components/MainComponent";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
 
 class App extends Component {
-
-  render(){
+  render() {
     return (
-      
-      <div className="App">
-        <Main />
-      </div>  
+      <BrowserRouter>
+        <div>
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
-  
+
 export default App;
+
+// For auto-formatting code in Windows, use " Shift + alt + F " 
