@@ -2,7 +2,7 @@ export const LEADERS = [
   {
     id: 0,
     name: "Supin Mariya",
-    image: "/assets/images/alberto.png",
+    image: "/assets/images/supin.png",
     designation: "Chief Epicurious Officer",
     abbr: "CEO",
     featured: false,
@@ -12,7 +12,7 @@ export const LEADERS = [
   {
     id: 1,
     name: "Pallavi Parihar",
-    image: "/assets/images/alberto.png",
+    image: "/assets/images/pallu.png",
     designation: "Chief Food Officer",
     abbr: "CFO",
     featured: false,
@@ -22,7 +22,7 @@ export const LEADERS = [
   {
     id: 2,
     name: "Mayank Mehta",
-    image: "/assets/images/alberto.png",
+    image: "/assets/images/mehta.png",
     designation: "Chief Taste Officer",
     abbr: "CTO",
     featured: false,
@@ -32,7 +32,7 @@ export const LEADERS = [
   {
     id: 3,
     name: "Rahul Jain",
-    image: "/assets/images/alberto.png",
+    image: "/assets/images/rahul.png",
     designation: "Executive Chef",
     abbr: "EC",
     featured: true,
