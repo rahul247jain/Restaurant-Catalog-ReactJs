@@ -25,10 +25,16 @@ class Contact extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Current State is: " + JSON.stringify(values));
-    alert("Current State is: " + JSON.stringify(values));
+    this.props.postFeedback(
+      values.firstname,
+      values.lastname,
+      values.telnum,
+      values.email,
+      values.agree,
+      values.contactType,
+      values.message
+    );
     this.props.resetFeedbackForm();
-    // event.preventDefault();
   }
 
   render() {
@@ -155,7 +161,7 @@ class Contact extends Component {
                     show="touched"
                     messages={{
                       required: "Required",
-                      // minLength: 'Must be greater than 2 characters',
+                      minLength: "Must be greater than 2 characters",
                       maxLength: "Must be 15 characters or less",
                     }}
                   />
